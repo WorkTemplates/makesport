@@ -3,6 +3,7 @@ import os
 import xml.etree.ElementTree as ET
 import shutil
 import subprocess
+import re
 
 path = "app"
 
@@ -77,7 +78,7 @@ for dname, dirs, files in os.walk(f"{path}/src/main/java/com"):
             replace(fpath, replace_function)
 
 replace(f"{path}/src/main/java/com/{package}/app/network/DataRetrofit.kt",
-        lambda x: x.replace("@GET(\"url\")", f"@GET(\"{data_url}\")"))
+        lambda x: re.sub(r'(?<=@GET\(")(.*?)(?=")', data_url, x) )
 
 #navigation
 replace(f"{path}/src/main/res/navigation/main.xml", lambda x: x.replace("android:name=\"com.template.", f"android:name=\"com.{package}."))
