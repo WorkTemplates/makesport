@@ -1,17 +1,20 @@
 [PROJECT]
 # com.это_значение.app
-package = template
-data_url = https://ostats-23c52-default-rtdb.europe-west1.firebasedatabase.app/GoldPlayers.json
+package = makesport
+data_url = https://ostats-23c52-default-rtdb.europe-west1.firebasedatabase.app/MakeSport.json
 
 [KEYSTORE]
-name = ANDREI IVANOV
+name = ANDREI ANDREEV
 
 [TEXT]
-app_name = Приложуха
-tab_title = ВАУ
+app_name = MakeSport
+tab_title = Cтраны
 about_text :
-    Тут какой то текст
-    Можно в несколько строк
+	Вашему взыксательному вниманию представлено приложение,
+	позволяющее в считанные секунды познакомиться с пятью последними Олимпиадами, 
+	Рио де Жанейро 2016, Лондон 2012, Пекин 2008, Афины 2004, Сидней 2000.
+	Сейчас мы живем в предвкушении проведения Олимпиады в Японии, осталось несколько
+	недель до этого чуда в мире спорта.	
 
 [COLORS_DAY]
 colorPrimary = #FF6200EE
